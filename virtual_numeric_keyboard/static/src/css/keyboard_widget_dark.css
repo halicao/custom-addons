@@ -1,0 +1,109 @@
+.virtual-keyboard {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 990;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.on_keyboard {
+    display: flex;
+    flex-flow: column;
+    background-color: #151515;
+    z-index: 999;
+    max-width: 360px;
+    max-height: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 1px solid #423d3d;
+	padding: 0px 8px;
+}
+
+.input_keyboard {
+    max-height: 80px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.value_keyboard {
+	max-height: 320px;
+	margin-top: -5px;
+	margin-bottom: 8px;
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.keyboard-button {
+	flex: 1;
+	background-color: #565656;
+	color: #fff !important;
+	font-size: 24px;
+	margin: 2px;
+	height: 50px;
+	transition: 0.01s all;
+	box-shadow: 7px 6px 28px 1px rgba(116, 108, 108, 0.24);
+}
+
+.keyboard-button:active {
+	transform: scale(0.96);
+	box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.keyboard-button[value="cancel"] {
+	background-color: #940909;
+	color: #fff !important;
+}
+
+.keyboard-button[value="enter"] {
+	background-color: #115296;
+	color: #fff !important;
+}
+
+.keyboard-button[value="backspace"] {
+	background-color: #333;
+	color: #fff !important;
+}
+
+.keyboard-button[value="clear"] {
+	background-color: #333;
+	color: #fff !important;
+}
+
+.keyboard-button[value="0"] {
+	flex: 2 44px;
+}
+
+.keyboard_input {
+    background-color: #444040;
+    color: #fff !important;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 40px;
+    border: 1px solid #000;
+    padding: 0px 5px;
+    margin-bottom: 7px;
+}
+
+.keyboard_label {
+    font-size: 17px;
+    color: #fff !important;
+    margin-left: 5px;
+}
+
+.toggle-button {
+	margin-left: 200px;
+    background: #f0f3fa;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    width: 40px;
+    height: 25px;
+    margin-top: 4px;
+}
