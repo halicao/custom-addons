@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="view_view_form_inherit_limit" model="ir.ui.view">
+		<field name="model">ir.ui.view</field>
+		<field name="inherit_id" ref="base.view_view_form" />
+		<field name="arch" type="xml">
+			<xpath expr="//field[@name='priority']" position="after">
+				<field name="limit" attrs="{'invisible': [('type', 'not in', ['tree', 'kanban'])]}"/>
+			</xpath>
+		</field>
+	</record>
+</odoo>
